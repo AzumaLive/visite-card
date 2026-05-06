@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-main: #14141e;
+  --bg-card: #1e1e29;
+  --bg-panel: #232331;
+  --bg-skill: #2d2d42;
+  --accent: #8e63f6;
+  --text-white: #ffffff;
+  --text-gray: #9999b2;
+  --text-dark-gray: #72728c;
+  --divider: #38384c;
+
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-white);
+}
+
+#root {
+  min-height: 100vh;
+}

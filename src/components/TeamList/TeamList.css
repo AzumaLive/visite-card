@@ -1,0 +1,42 @@
+.team-list {
+  flex: 1;
+  padding: 60px 110px 40px;
+  background: var(--bg-main);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.team-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.team-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.team-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--text-white);
+  line-height: 1.1;
+}
+
+.team-desc {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-gray);
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 190px);
+  gap: 28px;
+}
