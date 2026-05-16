@@ -1,6 +1,6 @@
 .detail-panel {
-  width: 750px;
-  min-width: 665px;
+  width: 650px;
+  /*min-width: 680px;*/
   background: var(--bg-panel);
   padding: 30px 40px;
   overflow-y: auto;
@@ -94,6 +94,12 @@
 }
 
 .detail-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.additional-info {
   display: flex;
   flex-direction: column;
   gap: 10px;

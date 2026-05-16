@@ -56,16 +56,21 @@ function DetailPanel({ member, onClose }) {
           <hr className="divider" />
 
           <section className="detail-section">
-            <h3 className="section-title">{member.additionalInfo}</h3>
-            <div className="exp-list">
-              {member.experience.map((exp, i) => (
-                <div key={i} className="exp-item">
-                  <span className="exp-period">{exp.period}</span>
-                  <p className="exp-title">{exp.title}</p>
-                  <p className="exp-desc">{exp.desc}</p>
+            {member.additionalInfo.map(({ title, inner }, index) => (
+              <div className="additional-info" key={index}>
+                <h3 className="section-title">{title}</h3>
+                <div className="exp-list">
+                  {inner.map((exp, i) => (
+                    <div key={i} className="exp-item">
+                      <span className="exp-period">{exp.period}</span>
+                      <p className="exp-title">{exp.title}</p>
+                      <p className="exp-desc">{exp.desc}</p>
+                    </div>
+                  ))}
+                  {index !== member.additionalInfo.length - 1 && <hr className="divider" />}
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </section>
 
         </div>
