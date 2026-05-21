@@ -1,9 +1,17 @@
 .layout {
   display: flex;
   min-height: 100vh;
+  align-items: stretch;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* Мобильная раскладка: список сверху, панель снизу */
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
 }

@@ -107,36 +107,49 @@ const team = [
   {
     id: 4,
     name: 'Чижов Василий',
-    role: '',
-    shortDesc: '',
-    fullDesc: '',
-    email: '',
-    phone: '',
-    location: '',
-    about: '',
-    skills: [],
+    role: 'Помощник капитана',
+    shortDesc: 'Учусь наверное',
+    fullDesc: '>Такие дела',
+    email: 'vas.ural0502@gmail.com',
+    phone: '+7 (963) 272-69-71',
+    about: 'Думаю думаю, откладываю, и думаю как бы все успеть',
+    skills: ['Капитан по морали'],
     additionalInfo: [{
       title: "Мои достижения",
-      inner: [],
-    }]
+      inner: [
+        { title: 'Сдал сессию!!!'
+        },
+      ],
+    },
+    {
+      title: "Мои цели",
+      inner: [
+        { period: '1)',
+          title: 'Сдать сессию еще разок',
+        },
+        { period: '2)',
+          title: '(опционально) получение знаний',
+        },
+    ]}]
   },
+
 
   {
     id: 5,
     name: 'Брагин Никита',
-    role: '',
-    shortDesc: '',
-    fullDesc: '',
-    email: '',
-    phone: '',
-    location: '',
-    about: '',
-    skills: [],
+    role: 'Учу учёбу и QA библию',
+    shortDesc: 'Готовлюсь к закрытию сессии',
+    fullDesc: 'Готовлюсь к закрытию сессии, учу школьников, изучаю QA automation',
+    email: 'nikitosikbragin@gmail.com',
+    phone: '+7 (967) 851-73-55',
+    about: 'Пытаюсь понять математику (не всегда успешно), в свободное время занимаюсь всем попало и поиском себя',
+    skills: ['Python', 'C++'],
     additionalInfo: [{
       title: "Мои достижения",
-      inner: [],
-    }]
+      inner: [{ title: "Поступил на МАТМЕХ"}]
+    }],
   },
+
 
 ]
 
